@@ -26,7 +26,7 @@
 
 ## Looking for krateoctl?
 
-`krateoctl`, the components installed by the [3.0 documentation](https://docs.krateo.io/?utm_source=github&utm_medium=org-profile&utm_campaign=krateo) and the documentation sources are in [krateoplatformops](https://github.com/krateoplatformops).
+`krateoctl`, the release manifests that the [3.0 documentation](https://docs.krateo.io/?utm_source=github&utm_medium=org-profile&utm_campaign=krateo) uses to install Krateo, and the sources of the documentation are in [krateoplatformops](https://github.com/krateoplatformops).
 
 ## Contribute
 
