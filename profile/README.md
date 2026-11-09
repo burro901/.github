@@ -24,10 +24,10 @@
 | [portal](https://github.com/krateo-platformops/portal), [frontend](https://github.com/krateo-platformops/frontend), [snowplow](https://github.com/krateo-platformops/snowplow) | The self-service portal, declared as Kubernetes resources |
 | [observability](https://github.com/krateo-platformops/observability) | OpenTelemetry, ClickHouse and HyperDX for logs, metrics, traces and events |
 
-## Looking for Krateo 3.x?
+## Looking for krateoctl?
 
-The components and tools of the Krateo 3.x release line, including `krateoctl` and the documentation sources, are in [krateoplatformops](https://github.com/krateoplatformops). Existing 3.x installations keep working from there.
+`krateoctl`, the components installed by the [3.0 documentation](https://docs.krateo.io/?utm_source=github&utm_medium=org-profile&utm_campaign=krateo) and the documentation sources are in [krateoplatformops](https://github.com/krateoplatformops).
 
 ## Contribute
 
-Read [CONTRIBUTING](https://github.com/krateo-platformops/.github/blob/main/CONTRIBUTING.md) before opening a pull request, and report vulnerabilities privately as described in the [security policy](https://github.com/krateo-platformops/.github/blob/main/SECURITY.md). Krateo PlatformOps is licensed under Apache 2.0.
+Read [CONTRIBUTING](https://github.com/krateo-platformops/.github/blob/main/CONTRIBUTING.md) before opening a pull request, and report vulnerabilities privately as described in the [security policy](https://github.com/krateo-platformops/.github/blob/main/SECURITY.md). Each repository states its license; the main [krateo](https://github.com/krateo-platformops/krateo) repository is licensed under Apache 2.0.
