@@ -162,6 +162,18 @@ jobs:
             # scanned (krateo-platformops/observability#155, Diego 2026-11-11).
             '''key"\s*:\s*"[a-z][a-z0-9_]*(\.[a-z0-9_]+)+"''',
           ]
+          [[allowlists]]
+          description = "File names are not values"
+          regexTarget = "secret"
+          regexes = [
+            # generic-api-key takes a name containing `secret`/`key` as the keyword and the next string
+            # as the value. When that string is a plain file name it is a path, not a credential: e.g.
+            # ("horizon-secret-key", "_90_krateo_secret_key.py") -- a Secret's name and the file it
+            # holds (krateo-blueprints/krateo-openstack-blueprint#265, Diego 2026-11-14). Tested with
+            # gitleaks 8.30.1: that line passes, high-entropy SECRET_KEY/api_key values are still caught.
+            # Residual risk, accepted: a credential that literally ends in one of these extensions.
+            '''^[A-Za-z0-9_.-]+\.(py|conf|cnf|ini|cfg|ya?ml|json|toml|sh|tpl)$''',
+          ]
           TOML
           # --redact keeps the secret out of the log and must stay. But on its own the job prints
           # "leaks found: N" and nothing else -- not the rule, the file, or the fingerprint -- so a
