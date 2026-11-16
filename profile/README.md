@@ -15,7 +15,7 @@
   <a href="#agentiko">AGENTIKO</a>
 </p>
 
-Platform teams publish golden paths once, as **blueprints**. Developers order what they need from a **self-service portal**, and Krateo creates it inside or outside the cluster it runs on, on the major clouds and on-premises. Everything is open source under the Apache License 2.0.
+Platform teams publish golden paths once, as **blueprints**. Developers order what they need from a **self-service portal**, and Krateo creates it inside or outside the cluster it runs on, on the major clouds and on-premises. The platform repositories are open source under the Apache License 2.0; the forks of gojq and libopenapi keep their original MIT licence.
 
 ## Start here
 
@@ -39,6 +39,10 @@ Ready-to-use blueprints for AWS, Azure, Google Cloud, OpenStack, Keycloak and mo
 
 Install on your own cluster with the [installer](https://github.com/krateo-platformops/installer), or try Krateo in the browser in the [free self-service lab](https://killercoda.com/krateoplatformops).
 
+## Looking for krateoctl?
+
+`krateoctl`, the release manifests that the [3.0 documentation](https://docs.krateo.io/?utm_source=github&utm_medium=org-profile&utm_campaign=krateo) uses to install Krateo, and the sources of the documentation are in [krateoplatformops](https://github.com/krateoplatformops).
+
 ## Community and contributing
 
 - Questions and ideas: [GitHub Discussions](https://github.com/krateo-platformops/krateo/discussions)
@@ -50,7 +54,9 @@ If Krateo PlatformOps is useful to you, [star the main repository](https://githu
 <a id="agentiko"></a>
 ## AGENTIKO: agents on top of Krateo PlatformOps
 
-<img src="media/agentiko-logo.png" width="280" alt="AGENTIKO, control every evolution">
+<p align="center">
+  <img src="media/agentiko-logo.png" width="280" alt="AGENTIKO, control every evolution">
+</p>
 
 AGENTIKO is the reasoning plane built by Krateo on Krateo PlatformOps. Its agents read the platform, investigate and prepare the change; Krateo PlatformOps validates it, a person approves it, and only then is it applied. AGENTIKO is a commercial product, in alpha at Kiratech since 3 August 2026.
 
